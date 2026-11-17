@@ -1,100 +1,104 @@
 # CampusCare – Interview Notes
 
-> **Note:** This interview was conducted with the hostel maintenance warden as part of the
-> CampusCare project fieldwork. Responses are recorded as paraphrased notes.
+**Person:** Ramesh Yadav, Hostel Maintenance Warden
+**Role:** In-charge of maintenance and complaint handling, F Block Boys Hostel
+**Date:** 2026-11-18, approximately 11:00 AM
+**Location:** Warden's office, Ground Floor, F Block
+**Interviewer:** Vaibhav
 
 ---
 
-## Participant Details
-
-| Field | Response |
-|-------|----------|
-| Participant role | Hostel Warden / Maintenance In-charge |
-| Years in this role | 6 years |
-| Hostel block(s) managed | A Block, B Block, C Block |
-| Interview date | 2026-11-18 |
-| Interview start time | 11:00 AM |
-| Interview end time | 11:35 AM |
-| Interview location | Warden's office, Ground Floor, A Block |
-| Consent given | ☑ Yes |
-| Notes recorded by | Vaibhav |
+I went to meet the warden after noticing the bathroom condition in F Block myself. I had seen the broken shower fitting and the discoloured flush pipe earlier that morning and wanted to understand how such issues get reported and fixed. I knocked on the warden's office door and introduced myself as an MCA student working on a small project about hostel maintenance. He seemed a little busy at first but agreed to talk for a while.
 
 ---
 
-## Responses
+## The Conversation
 
-**Q1 – Current complaint intake**
+**Me:** Sir, how do students usually report a problem in their room or bathroom?
 
-Students come directly to my office to report problems. Some send WhatsApp messages on my personal number. A few write in the hostel complaint register kept at the reception. There is no fixed method — everyone uses whatever is convenient for them. I get calls at odd hours too, even at night, when there is a serious issue like no water or a power cut.
-
----
-
-**Q2 – Recording complaints**
-
-We have a physical register at the reception counter. Students are supposed to write their room number, block, and the problem. But honestly, most students do not bother writing in the register. They just call or message me directly. So there is no proper record of how many complaints came in a month or which ones were resolved. At the end of the month I cannot tell you exactly how many complaints we received.
+**Ramesh Sir:** Most of them just come and tell me directly. Some send a WhatsApp message. Very few actually write in the register. I keep a register at the reception but students rarely use it. They think coming to me personally is faster, and honestly it usually is.
 
 ---
 
-**Q3 – Prioritising urgent issues**
+**Me:** So there is no fixed system?
 
-It is based on my own judgment. If someone says there is no water or an electric spark, I treat that as urgent and call the electrician or plumber immediately. For smaller things like a broken chair or slow internet, I note it down and ask the worker to attend to it when they are free. There is no written rule or checklist for priority — it all depends on experience.
+**Ramesh Sir:** No, nothing fixed. Whatever works. Some students call me at night also. Last week someone called at 11 PM because there was no water in their floor. I had to call the plumber the next morning. What can I do at 11 PM?
 
----
-
-**Q4 – Assigning work to staff**
-
-I call the maintenance worker directly on their mobile. We have one electrician, one plumber, and one carpenter. I tell them the room number and the problem verbally. Sometimes I write it on a piece of paper and give it to them. There is no formal assignment system. If the worker forgets or the paper gets lost, the complaint can get missed.
+*(He laughed a little here — seemed like this was a common frustration.)*
 
 ---
 
-**Q5 – Common complaint types**
+**Me:** How do you decide which complaint to attend to first?
 
-Electrical problems are the most common — fans not working, lights fusing, power sockets getting damaged. Plumbing comes second — taps dripping, drains blocked, no hot water in the morning. Furniture complaints are also regular — broken chairs, wobbly tables, wardrobe hinges coming off. During monsoon we also get complaints about seepage and damp walls.
-
----
-
-**Q6 – Reasons for delay**
-
-The main reason is that we have only one worker per trade. If the electrician is already attending to one room, the next complaint has to wait. Sometimes spare parts are not available in the hostel store and we have to order them, which takes two to three days. For bigger repairs we need approval from the college administration, which adds more time. Students also sometimes do not follow up, so their complaints just stay pending.
+**Ramesh Sir:** Experience. If someone says electric spark or no water at all, I call the worker immediately. If it is a fan or a broken chair, I note it and tell the worker when they come next. There is no written rule. I just know what is urgent.
 
 ---
 
-**Q7 – Recurring problems**
+**Me:** How do you assign the work to the maintenance staff?
 
-Yes, definitely. The rooms on the top floor of B Block have recurring plumbing issues — the water pressure is weak because the overhead tank is not cleaned regularly. Some rooms in C Block have repeated electrical complaints because the wiring in that wing is old. I know which rooms are problematic but I have no easy way to show this pattern to the administration.
-
----
-
-**Q8 – Updating students**
-
-I personally call the student or message them on WhatsApp once the work is done. If I am busy, the maintenance worker tells the student directly. There is no formal notification system. Sometimes students come back after a week asking if their complaint was attended to because nobody informed them.
+**Ramesh Sir:** I call them on their mobile and tell them — go to room 107, the fan is not working. That is it. Sometimes I write it on a slip of paper. But if the slip gets lost, the work does not happen. Last month one complaint about a blocked drain stayed pending for eight days because the plumber forgot. The student had to come back and remind me.
 
 ---
 
-**Q9 – Verifying resolution**
+**Me:** What are the most common complaints you get?
 
-The maintenance worker tells me verbally that the work is done. For major repairs I go and check myself. For minor issues like replacing a bulb or tightening a tap, I trust the worker's word. There is no sign-off from the student confirming they are satisfied. So sometimes the student thinks the problem is still there but on our side it is marked as done.
-
----
-
-**Q10 – Improvements needed**
-
-The biggest improvement would be a proper system where students can submit their complaint from their phone, and I can see all complaints in one place with their status. Right now everything is scattered — some complaints are in the register, some are on WhatsApp, some are only in my head. If there was a way to assign complaints to workers and track whether they are resolved, it would save a lot of time and reduce follow-up calls. Also, the administration could see reports and understand where the recurring problems are.
+**Ramesh Sir:** Electrical problems are number one — fans, lights, sockets. Then plumbing — taps dripping, drains blocked, flush not working. Furniture also comes — broken chairs, wobbly tables. During monsoon we get a lot of seepage complaints too. The rooms on the top floor are worst during rains.
 
 ---
 
-## Interviewer's Summary Observations
+**Me:** Why do some complaints take so long to resolve?
 
-The warden manages complaints entirely through informal channels — WhatsApp messages, phone calls, and a physical register that students rarely use. There is no digital record of complaints, no formal priority system, and no structured way to notify students of resolution. The warden identified the same pain points that CampusCare is designed to address: scattered complaint intake, no assignment tracking, no recurring issue visibility, and no student-facing status updates. The interview strongly supports the need for a structured complaint management tool in a hostel setting.
+**Ramesh Sir:** We only have one electrician and one plumber for the whole block. If the electrician is already in one room, the next complaint waits. Sometimes we need a spare part that is not in stock and we have to order it — that takes two or three days minimum. For bigger repairs we need approval from the college office, which can take a week.
 
 ---
 
-## Key Findings Relevant to CampusCare
+**Me:** Are there rooms or areas where the same problem keeps coming back?
 
-| Finding | Implication for CampusCare |
-|---------|---------------------------|
-| Students use WhatsApp and phone calls instead of a register | A simple digital form in CampusCare reduces reliance on informal channels |
-| No formal priority rule exists — warden uses personal judgment | The priority engine in CampusCare automates this using category and complaint age |
-| Workers are assigned verbally with no tracking | The "Assign To" and status update feature in admin portal addresses this directly |
-| Students are not notified systematically | The complaint status tracker in the student portal gives real-time visibility |
-| Recurring problems in specific blocks are known but not documented | The recurring issues module in analytics makes this pattern visible and reportable |
+**Ramesh Sir:** Yes, definitely. The top floor bathrooms in this block have weak water pressure — the overhead tank gets dirty and nobody cleans it regularly. I have told the administration three times but nothing happens. Also the electrical wiring in the older wing is very old. Those rooms get complaints every month.
+
+*(This surprised me — he had already reported it three times but it was still not fixed. The problem is not just reporting, it is follow-up and visibility at the administration level.)*
+
+---
+
+**Me:** How does a student know when their complaint has been resolved?
+
+**Ramesh Sir:** I call them or message them. Or the worker tells them directly. There is no formal process. Sometimes students come back after a week still thinking their complaint is pending, but on my side the work was done five days ago. There is a communication gap.
+
+---
+
+**Me:** How do you verify that the repair was actually done properly?
+
+**Ramesh Sir:** For big work I go and check myself. For small things I trust the worker's word. The student does not sign anything to confirm. So sometimes the student is not satisfied but I do not know that unless they come back and complain again.
+
+---
+
+**Me:** If you could change one thing about how complaints are handled, what would it be?
+
+**Ramesh Sir:** A simple app or system where students submit their complaint from their phone, I can see everything in one list, and I can mark it done when it is finished. Right now I have complaints on WhatsApp, in the register, in my head — all over the place. If everything was in one place it would be much easier. And the administration could also see reports and understand where the real problems are.
+
+---
+
+## 5 Key Things He Said
+
+1. Students use WhatsApp and personal visits — the register is rarely used
+2. Priority is based on personal experience, not any written rule
+3. Workers are assigned verbally — if the slip is lost, the complaint is forgotten
+4. The top floor plumbing problem has been reported three times with no action taken
+5. Students often do not know their complaint has been resolved because there is no notification
+
+## 1 Thing That Surprised Me
+
+He said he had reported the top floor water pressure issue to the administration **three times** and nothing had been done. I expected him to say the students were the problem, but actually the bottleneck was above him — the administration was not acting on known recurring problems. This made me realise that CampusCare needs to serve not just the warden but also give visibility to people higher up.
+
+---
+
+## How This Connects to CampusCare
+
+| What he said | What CampusCare addresses |
+|---|---|
+| Complaints come via WhatsApp and verbal — no central record | Single submission form, all complaints in one CSV |
+| Priority decided by experience, no rule | Automatic priority engine based on category and complaint age |
+| Workers assigned verbally, complaints get forgotten | Assign To field + status tracking in admin portal |
+| Students not informed when complaint is resolved | Status visible to student in My Complaints page |
+| Recurring problems known but not documented | Recurring Issues analytics module |
+| Administration does not see the full picture | Admin dashboard with block-wise and category-wise charts |
