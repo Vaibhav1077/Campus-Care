@@ -1,1 +1,1 @@
-complaint_id,date_reported,hostel_block,room_number,category,description,reported_by,contact,priority,status,assigned_to,date_resolved,resolution_notes
+complaint_id,name,category,description,status,priority,timestamp

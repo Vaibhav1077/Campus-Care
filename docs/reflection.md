@@ -1,48 +1,41 @@
-# Personal Reflection — CampusCare
+# Project Reflection
 
-> **This document must be written entirely by you, the student.**
-> The prompts below are guides only. AI assistance on this section is not
-> appropriate — your genuine voice and personal experience are what matter here.
+*Complete this reflection in your own words. Do not leave it blank for submission.*
 
 ---
 
-## Prompts
+## 1. What problem were you trying to solve?
 
-**1. What did you observe during the field visit that surprised you?**
-
-*(Write your answer here after the visit.)*
+[ Your answer here ]
 
 ---
 
-**2. How did your assumptions before the visit compare with what you actually found?**
+## 2. What did you learn from talking to users or staff?
 
-*(Which assumptions from docs/research.md held up? Which were wrong? Be specific.)*
-
----
-
-**3. What was the most difficult part of the data collection process?**
-
-*(Was it access, language, trust, time, or something else?)*
+[ Your answer here ]
 
 ---
 
-**4. How did you decide what features the application actually needs?**
+## 3. What worked well in your implementation?
 
-*(Connect your design decisions to specific observations from fieldwork.)*
-
----
-
-**5. What would you do differently if you had more time?**
-
-*(Be honest about trade-offs you made under the 24-hour constraint.)*
+[ Your answer here ]
 
 ---
 
-**6. What did you learn about yourself as a software engineer through this process?**
+## 4. What would you do differently if you started over?
 
-*(Not a generic answer — refer to a specific moment in the project.)*
+[ Your answer here ]
 
 ---
 
-> Do not submit this file with the prompts still unanswered.
-> Fill in your genuine reflections before submission.
+## 5. What was the most challenging part of this project?
+
+[ Your answer here ]
+
+---
+
+## 6. How does this project connect to real-world computing?
+
+[ Your answer here ]
+
+---
