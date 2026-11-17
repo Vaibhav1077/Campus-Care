@@ -1,53 +1,58 @@
-# Evidence Directory
+# Evidence Directory – CampusCare Fieldwork
 
-> ⚠️ **This directory is currently empty.**
-> It is reserved for real photographs and supporting documents collected during actual fieldwork.
-> Do not add AI-generated images, stock photos, or fabricated documents here.
+This directory contains photographic evidence collected during hostel field visits for the CampusCare project.
 
----
-
-## Purpose
-
-This folder stores physical evidence collected during hostel field visits, including:
-- Photographs of maintenance issues (broken equipment, leaking pipes, damaged furniture, etc.)
-- Photographs of the current complaint recording method (register, whiteboard, etc.)
-- Any printed forms, complaint registers, or notices observed in the hostel
+> **Important:** Only add real photographs taken during actual field visits. Do not add AI-generated images, stock photos, or screenshots presented as field evidence.
 
 ---
 
-## Naming Convention
+## Photographs Collected
 
-Use this format for all files:
+### photo_01_plumbing_issue.jpg
 
-```
-<session>_<type>_<sequence>.<extension>
-```
-
-Examples:
-- `obs1_electrical_01.jpg` — first photo from observation session 1, electrical issue
-- `obs2_plumbing_01.jpg` — first photo from observation session 2, plumbing issue
-- `interview_consent_01.pdf` — signed consent form from interview participant
-
----
-
-## What to Collect
-
-| Item | Required | Notes |
-|------|----------|-------|
-| Photo of maintenance issue | Yes | Minimum 2 photos from 2 different locations |
-| Photo of current complaint recording method | Yes | Register, whiteboard, or digital screen |
-| Interview consent form | If applicable | Signed by participant before interview begins |
-| Any existing complaint register page | Optional | Redact student names before including |
+| Field | Details |
+|-------|---------|
+| Filename | `photo_01_plumbing_issue.jpg` |
+| Capture device | OnePlus (device timestamp overlay: 2026-11-18 15:39) |
+| Subject | Wall-mounted urinal with flush valve and hose pipe |
+| Visible condition | Flush valve hose shows visible discolouration and staining; water mineral deposits on fixture |
+| Maintenance category | Plumbing |
+| Suggested priority | Medium |
+| Referenced in | `fieldwork/observation_notes.md` — Observation Session 2 |
 
 ---
 
-## What NOT to Include
+### photo_02_bathroom_condition.jpg
 
-- AI-generated or stock images presented as real evidence
-- Photos of people without their consent
-- Personal student information (names, phone numbers, ID cards)
-- Images from the internet
+| Field | Details |
+|-------|---------|
+| Filename | `photo_02_bathroom_condition.jpg` |
+| Capture device | OnePlus (device timestamp overlay: 2026-11-18 15:18) |
+| Subject | Bathroom shower area showing shower head, tap assembly, and wall condition |
+| Visible condition | Exposed blue pipe stub on left wall; unfinished partition and ceiling surfaces on right side |
+| Maintenance category | Plumbing / Civil |
+| Suggested priority | Medium |
+| Referenced in | `fieldwork/observation_notes.md` — Observation Session 1 |
 
 ---
 
-*Add files to this directory after actual field visits. Update `observation_notes.md` with filenames and descriptions for each photo added.*
+## Notes on Evidence Use
+
+- Timestamps shown in photographs are device-generated overlays and are treated as approximate capture times, not verified original camera metadata.
+- Hostel block name and room number have not been recorded in these images — add this information to `observation_notes.md` after the visit.
+- These photographs support the plumbing-related complaint categories in the CampusCare application and demonstrate the type of maintenance issues the system is designed to track.
+
+---
+
+## What Still Needs to Be Added
+
+| Item | Status |
+|------|--------|
+| Observer name in observation_notes.md | ⏳ Pending |
+| Hostel block and room/location | ⏳ Pending |
+| Complaint reporting method observed | ⏳ Pending |
+| Additional evidence if required by assignment | ⏳ As needed |
+
+---
+
+*Updated: 2026-11-18*

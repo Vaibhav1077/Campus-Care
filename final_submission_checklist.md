@@ -24,12 +24,12 @@ Use this checklist before submitting the assignment. Statuses are based on the a
 | Interview notes template | `fieldwork/interview_notes.md` | ✅ Complete (template ready) |
 | **Actual interview conducted and filled** | `fieldwork/interview_notes.md` | ⏳ Pending — must be done by you |
 | Field observation template | `fieldwork/observation_notes.md` | ✅ Complete (template ready) |
-| **Actual observations filled in** | `fieldwork/observation_notes.md` | ⏳ Pending — must be done by you |
+| **Actual observations filled in** | `fieldwork/observation_notes.md` | ✅ Partial — photos documented; observer name, block, room pending |
 | Complaint dataset (20+ records) | `data/data.csv` | ✅ Complete (26 records) |
 | Dataset clearly labelled as synthetic | `docs/data-notes.md` | ✅ Complete |
 | Data analysis document | `fieldwork/data_analysis.md` | ✅ Complete |
 | Evidence directory | `fieldwork/evidence/` | ✅ Created |
-| **Real photographs added to evidence** | `fieldwork/evidence/` | ⏳ Pending — must be done by you |
+| Real photographs added to evidence | `fieldwork/evidence/` | ✅ Complete — 2 photos added (2026-11-18) |
 
 ---
 
