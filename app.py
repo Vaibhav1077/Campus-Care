@@ -49,41 +49,109 @@ st.markdown(theme.get_css(), unsafe_allow_html=True)
 # Login gate
 # ---------------------------------------------------------------------------
 if not auth.is_authenticated():
-    # Centered login layout
-    left, mid, right = st.columns([1, 2, 1])
-    with mid:
-        login_html = theme.card(
-            f"""
-            <h2 style="color:{theme.DARK_GREEN}; margin-top:0;">🏫 CampusCare Login</h2>
-            <p style="color:{theme.CHARCOAL};">Smart Campus Maintenance &amp; Complaint Management</p>
-            """
-        )
-        st.markdown(login_html, unsafe_allow_html=True)
+    # Full-page login layout: left brand panel + right form
+    st.markdown("""
+    <style>
+    [data-testid="stAppViewContainer"] { background: #F7F4EC !important; }
+    .block-container { padding-top: 0 !important; padding-bottom: 0 !important; max-width: 100% !important; }
+    </style>
+    """, unsafe_allow_html=True)
 
-        username = st.text_input("Username", key="login_username")
-        password = st.text_input("Password", type="password", key="login_password")
+    left_col, right_col = st.columns([1, 1])
 
-        if st.button("Login", key="login_btn"):
-            if username and password:
-                ok, role = auth.login(username, password)
-                if ok:
-                    st.rerun()
-                else:
-                    st.error("Invalid username or password.")
-            else:
-                st.error("Please enter both username and password.")
-
-        st.markdown(
-            f"""
-            <div style="margin-top:16px; padding:10px; background:{theme.BEIGE};
-                        border-radius:8px; font-size:0.85em; color:{theme.CHARCOAL};">
-            <strong>Demo credentials</strong><br>
-            Student &nbsp;→&nbsp; <code>student</code> / <code>student123</code><br>
-            Admin &nbsp;&nbsp;→&nbsp; <code>admin</code> / <code>admin123</code>
+    with left_col:
+        st.markdown(f"""
+        <div style="
+            background: linear-gradient(160deg, #1b3828 0%, #244C3A 60%, #2d6349 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 60px 50px;
+            color: white;
+        ">
+            <div style="font-size:3.5rem; margin-bottom:16px;">🏫</div>
+            <h1 style="color:#ffffff !important; font-size:2.4rem; font-weight:800;
+                       line-height:1.2; margin:0 0 16px 0; border:none !important;">
+                Campus<span style="color:#A8B9A0;">Care</span>
+            </h1>
+            <p style="color:rgba(255,255,255,0.75); font-size:1.05rem; line-height:1.7;
+                      max-width:360px; margin:0 0 40px 0;">
+                Smart Campus Maintenance &amp; Complaint Management System.
+                Report issues, track progress, and keep your campus running.
+            </p>
+            <div style="display:flex; gap:12px; flex-wrap:wrap;">
+                <div style="background:rgba(255,255,255,0.1); border-radius:10px;
+                            padding:12px 18px; font-size:0.85rem; color:rgba(255,255,255,0.85);">
+                    📝 Submit Complaints
+                </div>
+                <div style="background:rgba(255,255,255,0.1); border-radius:10px;
+                            padding:12px 18px; font-size:0.85rem; color:rgba(255,255,255,0.85);">
+                    📊 Track & Analyze
+                </div>
+                <div style="background:rgba(255,255,255,0.1); border-radius:10px;
+                            padding:12px 18px; font-size:0.85rem; color:rgba(255,255,255,0.85);">
+                    🚨 Priority Engine
+                </div>
             </div>
-            """,
-            unsafe_allow_html=True,
-        )
+        </div>
+        """, unsafe_allow_html=True)
+
+    with right_col:
+        st.markdown("""
+        <div style="min-height:100vh; display:flex; align-items:center;
+                    justify-content:center; padding:40px 20px;">
+        """, unsafe_allow_html=True)
+
+        _, form_col, _ = st.columns([1, 8, 1])
+        with form_col:
+            st.markdown(f"""
+            <div style="margin-bottom:32px; text-align:center;">
+                <h2 style="color:#244C3A !important; font-size:1.7rem; font-weight:700;
+                           margin:0 0 8px 0; border:none !important;">Welcome back</h2>
+                <p style="color:#888; font-size:0.9rem; margin:0;">Sign in to your account</p>
+            </div>
+            """, unsafe_allow_html=True)
+
+            username = st.text_input("Username", key="login_username", placeholder="Enter your username")
+            password = st.text_input("Password", type="password", key="login_password", placeholder="Enter your password")
+
+            st.markdown("<div style='height:8px'></div>", unsafe_allow_html=True)
+
+            if st.button("Sign In →", key="login_btn", use_container_width=True):
+                if username and password:
+                    ok, role = auth.login(username, password)
+                    if ok:
+                        st.rerun()
+                    else:
+                        st.error("❌ Invalid username or password.")
+                else:
+                    st.error("Please enter both username and password.")
+
+            st.markdown(f"""
+            <div style="margin-top:24px; padding:16px 18px;
+                        background:#F7F4EC; border-radius:10px;
+                        border:1px solid #E8DDC8; font-size:0.84rem; color:#555;">
+                <div style="font-weight:700; color:#244C3A; margin-bottom:8px;">
+                    🔑 Demo Credentials
+                </div>
+                <div style="display:flex; gap:16px; flex-wrap:wrap;">
+                    <div style="background:white; border-radius:8px; padding:8px 14px;
+                                border:1px solid #e0dbd0;">
+                        <span style="font-size:0.75rem; color:#888; display:block;">STUDENT</span>
+                        <code style="color:#244C3A; font-weight:600;">student / student123</code>
+                    </div>
+                    <div style="background:white; border-radius:8px; padding:8px 14px;
+                                border:1px solid #e0dbd0;">
+                        <span style="font-size:0.75rem; color:#888; display:block;">ADMIN</span>
+                        <code style="color:#244C3A; font-weight:600;">admin / admin123</code>
+                    </div>
+                </div>
+            </div>
+            """, unsafe_allow_html=True)
+
+        st.markdown("</div>", unsafe_allow_html=True)
     st.stop()
 
 # ---------------------------------------------------------------------------
@@ -93,26 +161,48 @@ role = auth.get_current_role()
 user = auth.get_current_user()
 
 with st.sidebar:
-    st.markdown(
-        f"""
-        <div style="padding:12px 0 4px 0;">
-            <span style="font-size:1.3em; font-weight:700;">🏫 CampusCare</span><br>
-            <span style="font-size:0.8em; opacity:0.8;">Smart Campus Maintenance</span>
+    # Brand header
+    st.markdown(f"""
+    <div style="padding:28px 20px 20px 20px; border-bottom:1px solid rgba(168,185,160,0.25);">
+        <div style="font-size:1.6rem; margin-bottom:4px;">🏫</div>
+        <div style="font-size:1.2rem; font-weight:800; color:#ffffff; letter-spacing:-0.02em;">
+            Campus<span style="color:#A8B9A0;">Care</span>
         </div>
-        """,
-        unsafe_allow_html=True,
-    )
-    st.markdown(
-        f"""
-        <div style="background:rgba(255,255,255,0.12); border-radius:8px;
-                    padding:8px 12px; margin:8px 0 12px 0; font-size:0.85em;">
-            👤 <strong>{user}</strong><br>
-            <span style="opacity:0.75; text-transform:capitalize;">{role}</span>
+        <div style="font-size:0.72rem; color:rgba(255,255,255,0.5); letter-spacing:0.08em; text-transform:uppercase; margin-top:2px;">
+            Maintenance Portal
         </div>
-        """,
-        unsafe_allow_html=True,
-    )
-    st.divider()
+    </div>
+    """, unsafe_allow_html=True)
+
+    # User avatar + info
+    avatar_letter = user[0].upper() if user else "U"
+    role_label = "👨‍🎓 Student" if role == "student" else "🛠️ Admin"
+    role_color = "#A8B9A0" if role == "student" else "#E8DDC8"
+    st.markdown(f"""
+    <div style="margin:16px 12px 12px 12px; background:rgba(255,255,255,0.08);
+                border-radius:12px; padding:14px 16px; display:flex;
+                align-items:center; gap:12px;">
+        <div style="width:40px; height:40px; background:linear-gradient(135deg,#A8B9A0,#244C3A);
+                    border-radius:50%; display:flex; align-items:center;
+                    justify-content:center; font-weight:700; font-size:1rem;
+                    color:#fff; flex-shrink:0;">
+            {avatar_letter}
+        </div>
+        <div>
+            <div style="font-weight:700; color:#fff; font-size:0.9rem;">{user}</div>
+            <div style="font-size:0.72rem; color:{role_color}; margin-top:2px;
+                        background:rgba(255,255,255,0.1); display:inline-block;
+                        padding:2px 8px; border-radius:10px;">
+                {role_label}
+            </div>
+        </div>
+    </div>
+    <div style="margin:0 12px 8px 12px; font-size:0.7rem; color:rgba(255,255,255,0.4);
+                text-transform:uppercase; letter-spacing:0.1em; padding:0 4px;">
+        Navigation
+    </div>
+    """, unsafe_allow_html=True)
+
 
     if role == "student":
         page = st.radio(
@@ -161,7 +251,7 @@ df = _load(data_path)
 # Student — Submit Complaint
 # ---------------------------------------------------------------------------
 if page == "📝 Submit Complaint":
-    st.title("📝 Submit a New Complaint")
+    st.markdown(theme.page_header("📝 Submit a New Complaint", "Fill in the form below to report a maintenance issue"), unsafe_allow_html=True)
 
     with st.form("submit_form", clear_on_submit=True):
         col1, col2 = st.columns(2)
@@ -227,7 +317,7 @@ if page == "📝 Submit Complaint":
 # Student — My Complaints
 # ---------------------------------------------------------------------------
 elif page == "📋 My Complaints":
-    st.title("📋 My Complaints")
+    st.markdown(theme.page_header("📋 My Complaints", "All complaints submitted by you"), unsafe_allow_html=True)
 
     my_df = df[df["reported_by"].astype(str) == auth.get_current_user()].copy()
     st.metric("Your Complaints", len(my_df))
@@ -246,7 +336,7 @@ elif page == "📋 My Complaints":
 # Student — Complaint Status
 # ---------------------------------------------------------------------------
 elif page == "🔍 Complaint Status":
-    st.title("🔍 Complaint Status")
+    st.markdown(theme.page_header("🔍 Complaint Status", "View full details and resolution notes for your complaint"), unsafe_allow_html=True)
 
     my_df = df[df["reported_by"].astype(str) == auth.get_current_user()].copy()
 
@@ -294,7 +384,7 @@ elif page == "🔍 Complaint Status":
 # Student — Help & Info
 # ---------------------------------------------------------------------------
 elif page == "ℹ️ Help & Info":
-    st.title("ℹ️ Help & Information")
+    st.markdown(theme.page_header("ℹ️ Help & Information", "How to use CampusCare"), unsafe_allow_html=True)
 
     st.markdown(
         theme.card(
@@ -370,7 +460,7 @@ elif page == "ℹ️ Help & Info":
 # Admin — Dashboard
 # ---------------------------------------------------------------------------
 elif page == "📊 Dashboard":
-    st.title("📊 Dashboard")
+    st.markdown(theme.page_header("📊 Dashboard", "Overview of all campus complaints and analytics"), unsafe_allow_html=True)
 
     stats = summary_stats(df)
 
@@ -427,7 +517,7 @@ elif page == "📊 Dashboard":
 # Admin — All Complaints
 # ---------------------------------------------------------------------------
 elif page == "📋 All Complaints":
-    st.title("📋 All Complaints")
+    st.markdown(theme.page_header("📋 All Complaints", "Filter, search and export complaint records"), unsafe_allow_html=True)
 
     with st.sidebar:
         st.markdown("### Filters")
@@ -466,7 +556,7 @@ elif page == "📋 All Complaints":
 # Admin — Manage Complaint
 # ---------------------------------------------------------------------------
 elif page == "⚙️ Manage Complaint":
-    st.title("⚙️ Manage Complaint")
+    st.markdown(theme.page_header("⚙️ Manage Complaint", "Update status, assign staff and add resolution notes"), unsafe_allow_html=True)
 
     if df.empty:
         st.info("No complaints to manage.")
@@ -538,7 +628,7 @@ elif page == "⚙️ Manage Complaint":
 # Admin — Priority & Overdue
 # ---------------------------------------------------------------------------
 elif page == "🚨 Priority & Overdue":
-    st.title("🚨 Priority & Overdue Complaints")
+    st.markdown(theme.page_header("🚨 Priority & Overdue", "Critical and time-sensitive complaints requiring immediate attention"), unsafe_allow_html=True)
 
     critical_df = get_critical_pending(df)
     overdue_df = get_overdue_complaints(df)
@@ -568,7 +658,7 @@ elif page == "🚨 Priority & Overdue":
 # Admin — Recurring Issues
 # ---------------------------------------------------------------------------
 elif page == "🔄 Recurring Issues":
-    st.title("🔄 Recurring Issues")
+    st.markdown(theme.page_header("🔄 Recurring Issues", "Locations with repeated complaints needing systemic fixes"), unsafe_allow_html=True)
 
     recur_df = recurring_issues(df)
 
