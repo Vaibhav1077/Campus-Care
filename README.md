@@ -1,59 +1,114 @@
 # CampusCare
 
-A campus facility complaint management system built with Python and Streamlit.
+A role-based campus maintenance complaint management system built with Python and Streamlit.
+
+## Problem Being Solved
+
+Students living in campus hostels have no structured way to report maintenance issues such as electrical faults, plumbing failures, or broken furniture. Without a formal system, complaints are made verbally or by text message and often get lost or go unresolved for weeks. CampusCare gives students a self-service portal to submit and track their complaints while giving admin and maintenance staff a prioritised, searchable queue with built-in analytics. This reduces follow-up overhead for both students and staff and ensures critical issues surface automatically.
 
 ## Features
 
-- **Complaint Submission** — Students can submit facility issues with category and description
-- **Status Tracking** — Track the lifecycle of each complaint (Pending → In Progress → Resolved)
-- **Priority Engine** — Automatically assigns priority (High/Medium/Low) based on category and keywords
-- **Analytics Dashboard** — Visual breakdown of complaints by category, status, and priority
-- **Admin Panel** — View, filter, and update complaint statuses
+### Student Portal
+- Submit maintenance complaints with hostel block, room number, category, and description
+- Automatic unique complaint ID generation
+- Automatic priority classification (Critical / High / Medium / Low) using rule-based engine
+- View and search personal complaint history
+- Track complaint status (Pending → In Progress → Resolved) with a visual stepper
+- Filter complaints by status and category
 
-## Tech Stack
+### Admin Portal
+- View all complaints with search and multi-filter (block, category, priority, status)
+- Dashboard with KPI metrics: total, pending, in-progress, resolved, critical, overdue
+- Charts: complaints by category, status distribution, hostel-block distribution
+- Update complaint status, priority, assigned staff, and resolution notes
+- Priority & Overdue queue — identifies Critical/High and overdue complaints
+- Recurring Issues detector — surfaces locations with repeated same-category complaints
+- Analytics page with monthly trend, priority breakdown, block and category charts
+- Export complaints as CSV
+
+## Technology Stack
 
 | Component | Technology |
 |-----------|------------|
-| Language | Python 3.x |
+| Language | Python 3.14 |
 | UI Framework | Streamlit |
 | Data Processing | pandas |
+| Charts | Plotly |
 | Persistence | CSV (file-based) |
+| Testing | pytest |
 
-## Installation
+## Setup Instructions
 
 ```bash
+git clone https://github.com/Vaibhav1077/Campus-Care.git
+cd Campus-Care
 pip install -r requirements.txt
 ```
 
-## Running the App
+## Run Command
 
 ```bash
-streamlit run app.py
+python3.14 -m streamlit run app.py
 ```
 
-Open your browser at `http://localhost:8501`
+Then open: http://localhost:8501
 
-## CSV Data Format
+## Demo Credentials
 
-Complaints are stored in `data/data.csv` with the following columns:
+| Role | Username | Password |
+|------|----------|----------|
+| Student | student | student123 |
+| Admin | admin | admin123 |
 
-| Column | Description |
-|--------|-------------|
-| `complaint_id` | Unique identifier (auto-generated) |
-| `name` | Reporter's name |
-| `category` | Issue category (e.g., Maintenance, Cleanliness, Safety) |
-| `description` | Detailed description of the issue |
-| `status` | Current status: Pending, In Progress, or Resolved |
-| `priority` | Auto-assigned priority: High, Medium, or Low |
-| `timestamp` | Date and time the complaint was submitted |
+## Project Structure
 
-## Limitations
+```
+CampusCare/
+├── app.py                  # Main Streamlit application and page router
+├── requirements.txt        # Python dependencies
+├── data/
+│   ├── data.csv            # Live complaint records
+│   └── sample_data.csv     # Read-only synthetic demo dataset
+├── modules/
+│   ├── auth.py             # Login / logout / session management
+│   ├── data_manager.py     # CSV read/write, complaint CRUD
+│   ├── priority_engine.py  # Rule-based priority classification
+│   ├── analytics.py        # Aggregation and reporting functions
+│   ├── validators.py       # Field validation and duplicate detection
+│   └── theme.py            # Design tokens, CSS, and HTML component helpers
+├── tests/
+│   └── test_campuscare.py  # pytest test suite
+├── docs/                   # Research and fieldwork notes
+└── fieldwork/              # Interview notes and observation records
+```
 
-- No user authentication — anyone can view or modify complaints
-- Single-user CSV backend — not suitable for concurrent multi-user access
-- No real-time updates — page refresh required to see changes
-- No email/notification system for status updates
+## Data Schema
 
-## Demo
+Complaints are stored in `data/data.csv` with 13 columns:
 
-[ Insert 3-minute demo video/GIF link here ]
+| Column | Type | Description |
+|--------|------|-------------|
+| complaint_id | string | Unique identifier (e.g. C001 or CC-20241215120000) |
+| date_reported | date | ISO 8601 date the complaint was submitted |
+| hostel_block | string | Hostel block name (e.g. A Block, F Block) |
+| room_number | string | Room number within the block |
+| category | string | Issue category (Electrical, Plumbing, Furniture, Cleaning, Internet, AC/Heating, Other) |
+| description | string | Free-text description of the problem |
+| reported_by | string | Username of the student who submitted |
+| contact | string | Student phone or email for follow-up |
+| priority | string | Assigned priority: Critical, High, Medium, or Low |
+| status | string | Workflow status: Pending, In Progress, or Resolved |
+| assigned_to | string | Name of the staff member handling the complaint |
+| date_resolved | date | ISO 8601 date the complaint was resolved (empty if open) |
+| resolution_notes | string | Notes recorded when resolving the complaint |
+
+## Screenshots
+
+[ Insert screenshots here ]
+
+## Known Limitations
+
+- No real authentication — credentials are hardcoded in modules/auth.py; not production-safe
+- Single-file CSV backend — not suitable for concurrent multi-user writes
+- No email or push notifications when complaint status changes
+- No file/image upload for attaching evidence to complaints
