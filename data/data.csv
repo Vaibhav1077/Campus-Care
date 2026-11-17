@@ -1,1 +1,2 @@
 complaint_id,date_reported,hostel_block,room_number,category,description,reported_by,contact,priority,status,assigned_to,date_resolved,resolution_notes
+C001,2026-11-17,f block,107,Electrical,lan not working,vaibhav,9305981077,Medium,Pending,,,
