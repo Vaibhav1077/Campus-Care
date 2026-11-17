@@ -195,6 +195,28 @@ class TestPriorityEngine:
         assert "C001" in ids
         assert "C002" not in ids
 
+    def test_priority_plumbing_no_supply(self):
+        # Critical plumbing keyword 'no water' should yield Critical or High
+        rec = make_complaint(
+            category="Plumbing",
+            description="no water supply in bathroom since morning",
+            date_reported=str(date.today()),
+            status="Pending"
+        )
+        priority, explanation = calculate_priority(rec, self._empty_df())
+        assert priority in ("Critical", "High"), f"Expected Critical or High, got {priority}: {explanation}"
+
+    def test_priority_cleaning_low(self):
+        # Cleaning complaint with non-urgent description should get Medium or Low
+        rec = make_complaint(
+            category="Cleaning",
+            description="floor needs sweeping",
+            date_reported=str(date.today()),
+            status="Pending"
+        )
+        priority, explanation = calculate_priority(rec, self._empty_df())
+        assert priority in ("Medium", "Low"), f"Expected Medium or Low, got {priority}: {explanation}"
+
 
 # ---------------------------------------------------------------------------
 # analytics.py
