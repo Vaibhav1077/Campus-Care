@@ -1,0 +1,25 @@
+# SYNTHETIC DATA — FOR TESTING ONLY
+# This file contains fabricated records used to test the application UI and logic.
+# It must NEVER be presented as real fieldwork data.
+# Real complaints go in data/data.csv after the field visit.
+complaint_id,date_reported,hostel_block,room_number,category,description,reported_by,contact,priority,status,assigned_to,date_resolved,resolution_notes
+C001,2026-10-01,A,101,Plumbing,Tap leaking in bathroom,Student A,s1@nit.ac.in,High,Resolved,Ramesh Kumar,2026-10-03,Washer replaced
+C002,2026-10-02,B,215,Electrical,Fan not working,Student B,s2@nit.ac.in,Medium,Resolved,Suresh Singh,2026-10-04,Capacitor replaced
+C003,2026-10-05,A,110,Housekeeping,Common corridor not cleaned,Student C,s3@nit.ac.in,Low,Resolved,Housekeeping Team,2026-10-06,Cleaned and noted
+C004,2026-10-07,C,312,Plumbing,Drain blocked in bathroom,Student D,s4@nit.ac.in,High,In Progress,Ramesh Kumar,,
+C005,2026-10-08,B,220,Electrical,Power socket sparking,Student E,s5@nit.ac.in,Critical,Resolved,Suresh Singh,2026-10-08,Socket replaced immediately
+C006,2026-10-09,A,105,Furniture,Study chair broken,Student F,s6@nit.ac.in,Low,Open,,,
+C007,2026-10-10,D,401,Plumbing,No water supply in morning,Student G,s7@nit.ac.in,High,Resolved,Ramesh Kumar,2026-10-11,Pump repaired
+C008,2026-10-12,C,318,Electrical,Room light not working,Student H,s8@nit.ac.in,Medium,Resolved,Suresh Singh,2026-10-13,Bulb and fixture replaced
+C009,2026-10-14,B,222,Internet,LAN cable missing,Student I,s9@nit.ac.in,Medium,Open,,,
+C010,2026-10-15,A,112,Housekeeping,Dustbin not emptied for 3 days,Student J,s10@nit.ac.in,Low,Resolved,Housekeeping Team,2026-10-16,Schedule updated
+C011,2026-10-17,D,405,Plumbing,Hot water not available,Student K,s11@nit.ac.in,Medium,In Progress,Ramesh Kumar,,
+C012,2026-10-18,C,310,Furniture,Window latch broken,Student L,s12@nit.ac.in,Low,Open,,,
+C013,2026-10-19,A,108,Electrical,Switchboard cover missing,Student M,s13@nit.ac.in,High,Resolved,Suresh Singh,2026-10-19,Cover fitted same day
+C014,2026-10-20,B,230,Plumbing,Toilet flush not working,Student N,s14@nit.ac.in,High,Resolved,Ramesh Kumar,2026-10-21,Flush valve replaced
+C015,2026-10-21,D,410,Housekeeping,Pest issue in room,Student O,s15@nit.ac.in,High,In Progress,Pest Control Team,,
+C016,2026-10-22,C,305,Electrical,Inverter not charging,Student P,s16@nit.ac.in,Medium,Open,,,
+C017,2026-10-23,A,115,Internet,Wi-Fi signal very weak,Student Q,s17@nit.ac.in,Medium,Open,,,
+C018,2026-10-24,B,218,Plumbing,Basin tap handle broken,Student R,s18@nit.ac.in,Low,Resolved,Ramesh Kumar,2026-10-25,Handle replaced
+C019,2026-10-26,D,408,Furniture,Mattress torn,Student S,s19@nit.ac.in,Low,Open,,,
+C020,2026-10-28,C,315,Electrical,Extension board damaged,Student T,s20@nit.ac.in,High,Resolved,Suresh Singh,2026-10-28,New board provided
