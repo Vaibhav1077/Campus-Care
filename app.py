@@ -20,7 +20,7 @@ from modules.theme import esc
 from modules.data_manager import (
     load_data, add_complaint, update_complaint, get_complaint, export_csv,
 )
-from modules.priority_engine import get_overdue_complaints, get_critical_pending
+from modules.priority_engine import get_overdue_complaints, get_critical_pending, calculate_priority
 from modules.analytics import (
     summary_stats, category_distribution, status_distribution, recurring_issues,
 )
@@ -279,6 +279,8 @@ def student_submit():
                     "date_resolved": "",
                     "resolution_notes": "",
                 }
+                priority_str, _explanation = calculate_priority(record, df)
+                record["priority"] = priority_str
                 with st.spinner("Submitting your complaint..."):
                     ok, msg = add_complaint(record, DATA_PATH)
                 if ok:
@@ -301,9 +303,10 @@ def student_my_complaints():
     mine = my_complaints()
     html(theme.page_header("My complaints", "Everything you've reported, in one place."))
     if mine.empty:
-        html(theme.empty_state("No complaints yet", "Complaints you submit will appear here.", "inbox"))
+        st.info("You haven't submitted any complaints yet. Use Submit Complaint to report an issue.")
         st.button("Submit a complaint", on_click=goto, args=("Submit Complaint",))
         return
+    st.metric("Your complaints", len(mine))
     a, b, c = st.columns([2, 1, 1])
     q = a.text_input("Search", placeholder="Search by ID, category or description", key="my_q")
     f_status = b.selectbox("Status", ["All"] + VALID_STATUSES, key="my_status")
@@ -425,6 +428,20 @@ def admin_dashboard():
             fig.update_traces(textinfo="value", sort=False)
             st.plotly_chart(theme.style_fig(fig, 320).update_layout(showlegend=True, legend=dict(orientation="h", y=-0.05)),
                             use_container_width=True, config={"displayModeBar": False})
+    html(theme.section_title("Complaints by hostel block"))
+    block_df = df.groupby("hostel_block").size().reset_index(name="count")
+    if not block_df.empty:
+        fig = px.bar(
+            block_df.sort_values("count"),
+            x="count", y="hostel_block", orientation="h",
+            color_discrete_sequence=[theme.PROGRESS]
+        )
+        fig.update_traces(marker_cornerradius=4)
+        st.plotly_chart(
+            theme.style_fig(fig, 320),
+            use_container_width=True,
+            config={"displayModeBar": False}
+        )
     html(theme.section_title("Latest complaints"))
     cols = [("complaint_id", "Reference", "id"), ("date_reported", "Reported", "muted"), ("category", "Category", "text"),
             ("hostel_block", "Block", "text"), ("priority", "Priority", "priority"), ("status", "Status", "status")]
