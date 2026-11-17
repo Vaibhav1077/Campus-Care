@@ -1,25 +1,26 @@
-# SYNTHETIC DATA — FOR TESTING ONLY
-# This file contains fabricated records used to test the application UI and logic.
-# It must NEVER be presented as real fieldwork data.
-# Real complaints go in data/data.csv after the field visit.
 complaint_id,date_reported,hostel_block,room_number,category,description,reported_by,contact,priority,status,assigned_to,date_resolved,resolution_notes
-C001,2026-10-01,A,101,Plumbing,Tap leaking in bathroom,Student A,s1@nit.ac.in,High,Resolved,Ramesh Kumar,2026-10-03,Washer replaced
-C002,2026-10-02,B,215,Electrical,Fan not working,Student B,s2@nit.ac.in,Medium,Resolved,Suresh Singh,2026-10-04,Capacitor replaced
-C003,2026-10-05,A,110,Housekeeping,Common corridor not cleaned,Student C,s3@nit.ac.in,Low,Resolved,Housekeeping Team,2026-10-06,Cleaned and noted
-C004,2026-10-07,C,312,Plumbing,Drain blocked in bathroom,Student D,s4@nit.ac.in,High,In Progress,Ramesh Kumar,,
-C005,2026-10-08,B,220,Electrical,Power socket sparking,Student E,s5@nit.ac.in,Critical,Resolved,Suresh Singh,2026-10-08,Socket replaced immediately
-C006,2026-10-09,A,105,Furniture,Study chair broken,Student F,s6@nit.ac.in,Low,Open,,,
-C007,2026-10-10,D,401,Plumbing,No water supply in morning,Student G,s7@nit.ac.in,High,Resolved,Ramesh Kumar,2026-10-11,Pump repaired
-C008,2026-10-12,C,318,Electrical,Room light not working,Student H,s8@nit.ac.in,Medium,Resolved,Suresh Singh,2026-10-13,Bulb and fixture replaced
-C009,2026-10-14,B,222,Internet,LAN cable missing,Student I,s9@nit.ac.in,Medium,Open,,,
-C010,2026-10-15,A,112,Housekeeping,Dustbin not emptied for 3 days,Student J,s10@nit.ac.in,Low,Resolved,Housekeeping Team,2026-10-16,Schedule updated
-C011,2026-10-17,D,405,Plumbing,Hot water not available,Student K,s11@nit.ac.in,Medium,In Progress,Ramesh Kumar,,
-C012,2026-10-18,C,310,Furniture,Window latch broken,Student L,s12@nit.ac.in,Low,Open,,,
-C013,2026-10-19,A,108,Electrical,Switchboard cover missing,Student M,s13@nit.ac.in,High,Resolved,Suresh Singh,2026-10-19,Cover fitted same day
-C014,2026-10-20,B,230,Plumbing,Toilet flush not working,Student N,s14@nit.ac.in,High,Resolved,Ramesh Kumar,2026-10-21,Flush valve replaced
-C015,2026-10-21,D,410,Housekeeping,Pest issue in room,Student O,s15@nit.ac.in,High,In Progress,Pest Control Team,,
-C016,2026-10-22,C,305,Electrical,Inverter not charging,Student P,s16@nit.ac.in,Medium,Open,,,
-C017,2026-10-23,A,115,Internet,Wi-Fi signal very weak,Student Q,s17@nit.ac.in,Medium,Open,,,
-C018,2026-10-24,B,218,Plumbing,Basin tap handle broken,Student R,s18@nit.ac.in,Low,Resolved,Ramesh Kumar,2026-10-25,Handle replaced
-C019,2026-10-26,D,408,Furniture,Mattress torn,Student S,s19@nit.ac.in,Low,Open,,,
-C020,2026-10-28,C,315,Electrical,Extension board damaged,Student T,s20@nit.ac.in,High,Resolved,Suresh Singh,2026-10-28,New board provided
+C101,2026-10-01,A Block,101,Electrical,Ceiling fan not working since two days. Room gets very hot at night.,student_01,student01@college.edu,High,Resolved,Raju Electrician,2026-10-03,Fan motor replaced and tested.
+C102,2026-10-02,A Block,104,Plumbing,Washroom tap dripping continuously. Water is being wasted.,student_02,student02@college.edu,Medium,Resolved,Suresh Plumber,2026-10-04,Tap washer replaced.
+C103,2026-10-03,B Block,201,Cleaning,Common corridor bin overflowing. Not cleaned for three days.,student_03,student03@college.edu,Low,Resolved,Housekeeping Team,2026-10-04,Bin emptied and corridor mopped.
+C104,2026-10-04,B Block,205,Internet,WiFi signal very weak in room. Cannot attend online classes.,student_04,student04@college.edu,High,In Progress,IT Support,,
+C105,2026-10-05,C Block,301,Furniture,Study table leg is broken. Table wobbles and cannot be used safely.,student_05,student05@college.edu,Medium,Resolved,Carpenter Mohan,2026-10-07,Table leg repaired and reinforced.
+C106,2026-10-06,C Block,310,Electrical,Power socket sparking when charger is plugged in. Safety hazard.,student_06,student06@college.edu,Critical,Resolved,Raju Electrician,2026-10-06,Faulty socket replaced immediately.
+C107,2026-10-07,A Block,102,Plumbing,Drain in washroom blocked. Water not draining after bath.,student_07,student07@college.edu,High,Resolved,Suresh Plumber,2026-10-09,Drain cleared with wire tool.
+C108,2026-10-08,D Block,401,Cleaning,Dustbin in room damaged and cannot hold waste properly.,student_08,student08@college.edu,Low,Pending,,,
+C109,2026-10-09,D Block,408,Electrical,Tube light flickering constantly. Affecting study and causing headache.,student_09,student09@college.edu,Medium,In Progress,Raju Electrician,,
+C110,2026-10-10,B Block,202,Furniture,Wardrobe door hinge broken. Door falls if fully opened.,student_10,student10@college.edu,Medium,Resolved,Carpenter Mohan,2026-10-12,Hinge replaced and door aligned.
+C111,2026-10-11,E Block,501,Plumbing,No water supply in washroom from morning. Tap completely dry.,student_11,student11@college.edu,Critical,Resolved,Suresh Plumber,2026-10-11,Blocked inlet pipe cleared. Water restored.
+C112,2026-10-12,E Block,510,Internet,LAN cable port in room not working. Ethernet connection fails.,student_12,student12@college.edu,Medium,Pending,,,
+C113,2026-10-13,C Block,305,Other,Room door lock stiff and hard to open. Key sometimes gets stuck.,student_13,student13@college.edu,Medium,Resolved,General Maintenance,2026-10-15,Lock lubricated and key duplicate made.
+C114,2026-10-14,A Block,108,Electrical,Main light in room not working. Only table lamp available.,student_14,student14@college.edu,High,In Progress,Raju Electrician,,
+C115,2026-10-15,D Block,402,Cleaning,Pest insects noticed near window and under bed. Needs treatment.,student_15,student15@college.edu,High,Pending,,,
+C116,2026-10-16,B Block,208,Furniture,Chair seat cracked. Sitting on it is uncomfortable and unsafe.,student_16,student16@college.edu,Low,Resolved,Carpenter Mohan,2026-10-18,Chair replaced from store.
+C117,2026-10-17,E Block,505,Plumbing,Toilet flush not working properly. Requires multiple attempts.,student_17,student17@college.edu,High,In Progress,Suresh Plumber,,
+C118,2026-10-18,C Block,308,Internet,No internet access in entire wing since morning. Router may be down.,student_18,student18@college.edu,Critical,Resolved,IT Support,2026-10-18,Router rebooted and firmware updated.
+C119,2026-10-19,A Block,110,Other,Window glass cracked. Risk of injury and security concern at night.,student_19,student19@college.edu,High,Pending,,,
+C120,2026-10-20,D Block,415,Electrical,Extension board in common room burning smell. Switched off for safety.,student_20,student20@college.edu,Critical,Resolved,Raju Electrician,2026-10-20,Overloaded board replaced with rated one.
+C121,2026-10-21,B Block,210,Plumbing,Hot water not available in morning slot. Geyser may be faulty.,student_21,student21@college.edu,Medium,Pending,,,
+C122,2026-10-22,E Block,502,Cleaning,Mold forming on bathroom wall near shower area. Needs treatment.,student_22,student22@college.edu,Medium,In Progress,Housekeeping Team,,
+C123,2026-10-23,C Block,302,Furniture,Mattress on bed is torn and spring is exposed. Discomfort and injury risk.,student_23,student23@college.edu,High,Pending,,,
+C124,2026-10-24,A Block,105,Internet,WiFi password not working after reset. Cannot connect any device.,student_24,student24@college.edu,Medium,Resolved,IT Support,2026-10-24,Password redistributed after router reset.
+C125,2026-10-25,D Block,410,Other,Ceiling paint peeling and falling on bed. Possible dampness from above.,student_25,student25@college.edu,Medium,In Progress,General Maintenance,,
