@@ -110,7 +110,23 @@ The demo covers student login, complaint submission, admin dashboard, priority e
 
 ## Screenshots
 
-[ Insert screenshots here ]
+### Login Page
+![Login](evidence/screenshot/Screenshot%202026-11-18%20110130.png)
+
+### Submit Complaint (Student)
+![Submit Complaint](evidence/screenshot/Screenshot%202026-11-18%20110151.png)
+
+### My Complaints (Student)
+![My Complaints](evidence/screenshot/Screenshot%202026-11-18%20110221.png)
+
+### Admin Dashboard
+![Admin Dashboard](evidence/screenshot/Screenshot%202026-11-18%20110227.png)
+
+### All Complaints with Filters (Admin)
+![All Complaints](evidence/screenshot/Screenshot%202026-11-18%20110248.png)
+
+### Manage Complaint (Admin)
+![Manage Complaint](evidence/screenshot/Screenshot%202026-11-18%20110259.png)
 
 ## Known Limitations
 
