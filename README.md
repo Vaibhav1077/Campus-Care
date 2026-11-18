@@ -102,6 +102,12 @@ Complaints are stored in `data/data.csv` with 13 columns:
 | date_resolved | date | ISO 8601 date the complaint was resolved (empty if open) |
 | resolution_notes | string | Notes recorded when resolving the complaint |
 
+## Demo Video
+
+▶️ [Watch the 3-minute demo on Google Drive](https://drive.google.com/drive/folders/1H4cnVCVzivzDjqjciYaMRTr2qkkFRKid?usp=drive_link)
+
+The demo covers student login, complaint submission, admin dashboard, priority engine, and status update workflow.
+
 ## Screenshots
 
 [ Insert screenshots here ]
